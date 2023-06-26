@@ -1,0 +1,20 @@
+{
+    "name": "Easy GitHub",
+    "version": "1.0.0",
+    "manifest_version": 2,
+    "icons": {
+        "16": "images/lam16.png",
+        "32": "images/lam32.png",
+        "64": "images/lam64.png"
+    },
+    "author": "Pham Duong",
+    "description": "Working with GitHub easy",
+    "browser_action": {
+        "default_icon": "images/lam64.png",
+        "default_title": "Easy GitHub Title",
+        "default_popup": "index.html"
+    },
+    "permissions": [
+        "https://misajsc.amis.vn/*"
+    ]
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>PVDUONG</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <script type="text/javascript" src="scripts/jquery-3.1.1.min.js"></script>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      table {
+        width: 100%;
+        border-collapse: separate;
+        border-spacing: 0;
+        position: relative;
+        border: 1px solid #ccc;
+      }
+      thead {
+        position: sticky;
+        top: 0;
+        z-index: 10;
+        background-color: #fff;
+      }
+      th,
+      td {
+        border: 1px solid #ccc;
+        padding: 10px;
+      }
+      tr td:nth-child(1) {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div style="display: flex; align-items: center; justify-content: center">
+      <button id="showAllClick">Show</button>
+      <button id="getAllClick">Get</button>
+      <button id="downloadClick">Download</button>
+    </div>
+    <div id="timeNow">timeNow</div>
+    <div
+      style="
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 35px 0;
+      "
+    >
+      <div style="height: calc(100vh - 100px); overflow: auto">
+        <table>
+          <thead id="headerData"></thead>
+          <tbody id="bodyData"></tbody>
+        </table>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript" src="scripts/index.js"></script>
+</html>
