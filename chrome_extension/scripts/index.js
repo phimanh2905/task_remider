@@ -1,6 +1,26 @@
-var buttonShowAll = document.getElementById("showAllClick");
-var buttonGetAll = document.getElementById("getAllClick");
-var buttonDownload = document.getElementById("downloadClick");
+const { forEach } = require("lodash");
+
+const buttonShowAll = document.getElementById("showAllClick");
+const buttonGetAll = document.getElementById("getAllClick");
+const buttonSendMail = document.getElementById("sendMailClick");
+
+buttonShowAll.addEventListener("click", showAllData);
+buttonGetAll.addEventListener("click", getDataAMISCongViec);
+buttonSendMail.addEventListener("click", async () => {
+  const timeNow = localStorage.getItem("timenow");
+  const rowHeader = localStorage.getItem("rowHeader");
+  const rowBody = localStorage.getItem("rowBody");
+
+  const { message } = await this.postJSON(
+    "http://localhost:8080/api/tasks/sendmail",
+    {
+      timeNow,
+      rowHeader,
+      rowBody,
+    }
+  );
+  document.querySelector("#responseSendMail").innerHTML = message;
+});
 
 function showAllData() {
   chrome.tabs.query(
@@ -24,7 +44,7 @@ function showAllData() {
 function getDataAMISCongViec() {
   chrome.tabs.query(
     { active: true, windowId: chrome.windows.WINDOW_ID_CURRENT },
-    function (tabs) {
+    (tabs) => {
       const { id: tabId } = tabs[0].url;
       const getBody = `(function getHeaderBody(){
                 var dataParent = [];
@@ -57,6 +77,7 @@ function getDataAMISCongViec() {
           rowHeader.unshift("STT");
         }
         console.log(rowHeader);
+        localStorage.setItem("rowHeader", JSON.stringify(rowHeader));
         var thead = document.querySelector("#headerData");
         var textHeader = "";
         rowHeader.forEach((item) => {
@@ -68,17 +89,17 @@ function getDataAMISCongViec() {
           const now = new Date();
           return `Thời gian lấy dữ liệu: ${now.getDate()}/${
             now.getMonth() + 1
-          }/${now.getFullYear()}`;
+          }/${now.getFullYear()} ${now.getHours()}:${now.getMinutes()}:${now.getSeconds()}`;
         };
-
-        document.querySelector("#timeNow").textContent = getDateNow();
+        const timeNow = getDateNow();
+        document.querySelector("#timenow").textContent = timeNow;
+        localStorage.setItem("timenow", timeNow);
       });
 
-      chrome.tabs.executeScript(tabId, { code: getBody }, function (result) {
-        // const rowHeader = result[0];
-        // console.log(rowHeader);
+      chrome.tabs.executeScript(tabId, { code: getBody }, (result) => {
         const rowBody = result[0];
         console.log(rowBody);
+        localStorage.setItem("rowBody", JSON.stringify(rowBody));
         var tbody = document.querySelector("#bodyData");
         var textBody = "";
         rowBody.forEach((item) => {
@@ -95,25 +116,21 @@ function getDataAMISCongViec() {
   );
 }
 
-function downloadHTML() {
-  download("data.html", document.getElementsByTagName("html")[0].innerHTML);
+async function postJSON(url, data) {
+  let result = null;
+  try {
+    const response = await fetch(url, {
+      method: "POST", // or 'PUT'
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(data),
+    });
+
+    result = await response.json();
+    console.log("Success:", result);
+  } catch (error) {
+    console.error("Error:", error);
+  }
+  return result;
 }
-
-function download(filename, text) {
-  var element = document.createElement("a");
-  element.setAttribute(
-    "href",
-    "data:text/plain;charset=utf-8," + encodeURIComponent(text)
-  );
-  element.setAttribute("download", filename);
-  element.style.display = "none";
-  document.body.appendChild(element);
-  element.click();
-  document.body.removeChild(element);
-}
-
-function sendMail(params) {}
-
-buttonShowAll.addEventListener("click", showAllData);
-buttonGetAll.addEventListener("click", getDataAMISCongViec);
-buttonDownload.addEventListener("click", downloadHTML);
