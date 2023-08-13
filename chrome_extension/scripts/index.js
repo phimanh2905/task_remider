@@ -1,5 +1,3 @@
-const { forEach } = require("lodash");
-
 const buttonShowAll = document.getElementById("showAllClick");
 const buttonGetAll = document.getElementById("getAllClick");
 const buttonSendMail = document.getElementById("sendMailClick");
