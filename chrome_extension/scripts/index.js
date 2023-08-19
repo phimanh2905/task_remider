@@ -47,15 +47,40 @@ function getDataAMISCongViec() {
       const getBody = `(function getHeaderBody(){
                 var dataParent = [];
                 var selectorRowData = document.querySelectorAll('.cdk-drag.task-wrap.cdk-drag-disabled.ng-star-inserted');
-    
+                var parentId = 1;
+
                 selectorRowData.forEach(item1 => {
-                    var selectorColumnData = item1.querySelectorAll('.header-grid.ng-star-inserted');
-                    var dataChildren = [];
-                    selectorColumnData.forEach(item2 => {
-                        var textColumnData = item2.textContent;
-                        dataChildren.push(textColumnData);
-                    });
-                    dataParent.push(dataChildren);
+                  var selectorColumnData = item1.querySelectorAll('.header-grid.ng-star-inserted');
+                  var dataChildren = [];
+                  
+                  selectorColumnData.forEach(item2 => {
+                    if(item2) {
+                      var marginLeft = ''
+                      var rowParentTask = item2.querySelector('.icon-sub-task-circle');
+                      if(rowParentTask) {
+                        parentId = selectorColumnData[0].textContent
+                      }
+
+                      var tasknameFormat = item2.querySelector('.taskname-format');
+                      if (tasknameFormat) {
+                          marginLeft = (tasknameFormat.querySelector('.pos-relative').style.marginLeft).replace('px','')
+                      }
+                      
+                      if(marginLeft && marginLeft != ''){
+                        if(marginLeft > 0){
+                            dataChildren.push(parentId);
+                        }
+                        else {
+                            dataChildren.push('');
+                        }
+                      }
+                      
+                      var textColumnData = item2.textContent;
+                      dataChildren.push(textColumnData);
+                    }
+                  });
+                  
+                  dataParent.push(dataChildren);
                 });
     
                 return dataParent;
@@ -79,6 +104,9 @@ function getDataAMISCongViec() {
         var thead = document.querySelector("#headerData");
         var textHeader = "";
         rowHeader.forEach((item) => {
+          if(item == 'Tên công việc') {
+            textHeader += '<th>Mã công việc cha</th>'
+          }
           textHeader += `<th>${item}</th>`;
         });
         thead.innerHTML = textHeader;
