@@ -7,16 +7,20 @@ buttonGetAll.addEventListener("click", getDataAMISCongViec);
 buttonSendMail.addEventListener("click", async () => {
   const timeNow = localStorage.getItem("timenow");
   const rowHeader = localStorage.getItem("rowHeader");
-  const rowBody = localStorage.getItem("rowBody");
+  const rowBody = JSON.parse(localStorage.getItem("rowBody"));
 
   const { message } = await this.postJSON(
     "http://localhost:8080/api/tasks/sendmail",
-    {
-      timeNow,
-      rowHeader,
-      rowBody,
-    }
+    rowBody.map(item=>item[7])
   );
+  // const { message } = await this.postJSON(
+  //   "http://localhost:8080/api/tasks/sendmail",
+  //   {
+  //     timeNow,
+  //     rowHeader,
+  //     rowBody,
+  //   }
+  // );
   document.querySelector("#responseSendMail").innerHTML = message;
 });
 
@@ -99,7 +103,6 @@ function getDataAMISCongViec() {
         if (!rowHeader.some((x) => x == "STT")) {
           rowHeader.unshift("STT");
         }
-        console.log(rowHeader);
         localStorage.setItem("rowHeader", JSON.stringify(rowHeader));
         var thead = document.querySelector("#headerData");
         var textHeader = "";
@@ -124,7 +127,6 @@ function getDataAMISCongViec() {
 
       chrome.tabs.executeScript(tabId, { code: getBody }, (result) => {
         const rowBody = result[0];
-        console.log(rowBody);
         localStorage.setItem("rowBody", JSON.stringify(rowBody));
         var tbody = document.querySelector("#bodyData");
         var textBody = "";
