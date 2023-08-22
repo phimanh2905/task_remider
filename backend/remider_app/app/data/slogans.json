@@ -1,0 +1,502 @@
+[
+    {
+        "IDContent": 1,
+        "Content": "Nếu biết thức tỉnh quan sát, ta có thể học hỏi bao điều hay. Tiếc rằng khi đắc thời người ta quên đi quá khứ rất nhanh. Chỉ trong đau khổ, nhục nhã ê chề mới chịu học.",
+        "Author": "Hành trình về Phương Đông"
+    },
+    {
+        "IDContent": 2,
+        "Content": "Tự do tư tưởng không phải chỉ là muốn nghĩ thế nào thì nghĩ, mà còn là giải thoát ta ra khỏi các áp lực bắt ta phải suy nghĩ theo một lề lối nào đó.",
+        "Author": "Hành trình về Phương Đông"
+    },
+    {
+        "IDContent": 3,
+        "Content": "Chúng ta càng ham muốn thì càng sợ hãi và càng sợ hãi lại càng đau khổ.",
+        "Author": "Hành trình về Phương Đông"
+    },
+    {
+        "IDContent": 4,
+        "Content": "Sự hiểu biết về cõi vô hình rất quan trọng, vì khi hiểu rõ những điều xảy ra sau khi chết, ta sẽ không sợ chết nữa. Nếu có chết thì chỉ là cái chết hình hài xác thân chứ không phải là chấm dứt sự sống, và hình hài có chết đi thì sự sống mới tiếp tục tiến hóa ở một thể khác tinh vi hơn.",
+        "Author": "Hành trình về Phương Đông"
+    },
+    {
+        "IDContent": 5,
+        "Content": "Người nghệ sĩ chân chính sáng tạo vì lòng yêu cái đẹp, chứ không vì tên tuổi, tiền bạc, địa vị.",
+        "Author": "Hành trình về Phương Đông"
+    },
+    {
+        "IDContent": 6,
+        "Content": "Nguyên nhân chính của bệnh là do sự bận rộn với đời sống hằng ngày, nếp sống càng tiện nghi thì họ lại càng hết sức lao tâm lao lực để đạt đến cái tiện nghi hơn nữa.",
+        "Author": "Hành trình về Phương Đông"
+    },
+    {
+        "IDContent": 7,
+        "Content": "Trong nhiều năm ròng rã, chúng ta cố tìm hạnh phúc và nhiều lần tưởng đã đạt được nó để hưởng một cách lâu bền. Nhưng lần nào ta cũng thất vọng. Sau đó, ta lại tiếp tục chạy theo ảo ảnh đó như trước. Nếu biết dừng chân suy nghĩ, ta sẽ thấy chúng ta đuổi theo hạnh phúc nhưng không hề biết đến bản chất thật sự của nó, và không biết phải dùng phương tiện nào để đạt được nó.",
+        "Author": "Hành trình về Phương Đông"
+    },
+    {
+        "IDContent": 8,
+        "Content": "Các bạn hãy nhìn ly nước đầy trên tay tôi đây, nếu tôi tiếp tục rót thêm thì nước sẽ tràn ra ngoài. trừ khi tôi đổ bớt nước trong ly đi thì tôi mới rót thêm nước vào được. Kiến thức cũng thế, chỉ khi ta khiêm tốn gạt bỏ những thành kiến sẵn có, ta mới tiếp nhận thêm được những điều mới lạ.",
+        "Author": "Hành trình về Phương Đông"
+    },
+    {
+        "IDContent": 9,
+        "Content": "Chúng ta dành nhiều giờ để bàn cãi sôi nổi về người này, người nọ, chê bai ông này, giễu cợt bà kia. Phải chăng chúng ta vẫn làm thế? Có bao giờ chúng ta đặt câu hỏi, tại sao chúng ta lại làm thế không? Lòng ta còn ham tiền bạc, danh vọng, địa vị, sức khỏe và chỉ cầu bình an cho chính mình thôi, nên chẳng bao giờ thỏa mãn.",
+        "Author": "Hành trình về Phương Đông"
+    },
+    {
+        "IDContent": 10,
+        "Content": "Khi ta phát tâm làm một việc hợp với thiên ý thì một tinh tú ảnh hưởng tới ta bỗng chói sáng và các sóng điện mạnh mẽ đẩy ngược tia vũ trụ sang hướng khác. Do đó, con người có thể cải số mệnh dễ dàng nếu biết làm các việc tốt lành, đẹp đẽ.",
+        "Author": "Hành trình về Phương Đông"
+    },
+    {
+        "IDContent": 11,
+        "Content": "Tất cả những người lớn đều từng là trẻ con... nhưng rất ít người trong số đó nhớ về điều đó.",
+        "Author": "Hoàng Tử Bé"
+    },
+    {
+        "IDContent": 12,
+        "Content": "Đó thật là một nơi bí ẩn, vùng đất của những giọt nước mắt.",
+        "Author": "Hoàng Tử Bé"
+    },
+    {
+        "IDContent": 13,
+        "Content": "Mỗi người đều có một bông hoa của riêng mình, một ngôi sao cho riêng mình, và chẳng có ai giống ai. Người cậu yêu là độc nhất, bởi cậu yêu người ấy, vậy thôi. Người ấy quan trọng vì người ấy là tình yêu của cậu.",
+        "Author": "Hoàng Tử Bé"
+    },
+    {
+        "IDContent": 14,
+        "Content": "Người ta chẳng bao giờ hài lòng tại nơi mình ở.",
+        "Author": "Hoàng Tử Bé"
+    },
+    {
+        "IDContent": 15,
+        "Content": "Nếu bạn đã dành trọn thời gian để chăm sóc một đóa hồng, thì đóa hồng đó sẽ trở nên vô cùng quan trọng với bạn.",
+        "Author": "Hoàng Tử Bé"
+    },
+    {
+        "IDContent": 16,
+        "Content": "Chỉ có lũ trẻ con mới biết chúng tìm kiếm điều gì. Chúng dành thời gian cho một con búp bê vải, và con búp bê trở nên rất quan trọng, và nếu người ta giật búp bê của chúng đi, chúng sẽ khóc.",
+        "Author": "Hoàng Tử Bé"
+    },
+    {
+        "IDContent": 17,
+        "Content": "Loài người bây giờ không còn đủ thì giờ để hiểu cái gì hết. Họ mua các vật làm sẵn ở các con buôn. Nhưng vì không ở đâu người ta bày bán bạn hữu, nên loài người không có bạn.",
+        "Author": "Hoàng Tử Bé"
+    },
+    {
+        "IDContent": 18,
+        "Content": "Và bây giờ đây là bí mật của tôi, một bí mật rất đơn giản: Đó là chỉ bằng trái tim thì con người mới có thể nhìn nhận một cách đúng đắn; những điều quan trọng thường vô hình với mắt của chúng ta.",
+        "Author": "Hoàng Tử Bé"
+    },
+    {
+        "IDContent": 19,
+        "Content": "Người ta chỉ nhìn rõ bằng trái tim. Con mắt thường luôn mù lòa trước điều cốt tử.",
+        "Author": "Hoàng Tử Bé"
+    },
+    {
+        "IDContent": 20,
+        "Content": "Những thứ đẹp nhất trên thế giới không thể thấy và chạm vào được, chúng chỉ được cảm nhận bằng trái tim.",
+        "Author": "Hoàng Tử Bé"
+    },
+    {
+        "IDContent": 21,
+        "Content": "Tốt thôi, tôi phải chịu đựng sự có mặt của một vài con sâu bướm nếu tôi mong muốn có thể làm quen với những con bướm xinh đẹp.",
+        "Author": "Hoàng Tử Bé"
+    },
+    {
+        "IDContent": 22,
+        "Content": "Bạn xinh đẹp, nhưng bạn hoàn toàn trống rỗng. Sẽ không ai có thể hi sinh vì bạn.",
+        "Author": "Hoàng Tử Bé"
+    },
+    {
+        "IDContent": 23,
+        "Content": "Loài người bây giờ không còn đủ thì giờ để hiểu cái gì hết. Họ mua các vật làm sẵn ở các con buôn. Nhưng vì không ở đâu người ta bày bán bạn hữu, nên loài người không có bạn.",
+        "Author": "Hoàng Tử Bé"
+    },
+    {
+        "IDContent": 24,
+        "Content": "Con người thường quên sự thật này, “chú cáo nói. “Nhưng bạn không được quên nó. Bạn sẽ chịu trách nhiệm mãi mãi cho những gì bạn đã chế ngự. Bạn phải chịu trách nhiệm cho hạnh phúc của bạn.",
+        "Author": "Hoàng Tử Bé"
+    },
+    {
+        "IDContent": 25,
+        "Content": "Họ chui vào những chuyến tàu nhanh, nhưng họ chẳng biết mình tìm kiếm cái gì. Thế mà họ cứ cuống quýt lên, quay cuồng lên.",
+        "Author": "Hoàng Tử Bé"
+    },
+    {
+        "IDContent": 26,
+        "Content": "Những thứ xảy ra một lần sẽ không lặp lại lần nữa. Nhưng những thứ xảy ra lần thứ hai chắc chắn sẽ có lần thứ ba.",
+        "Author": "Nhà Giả Kim"
+    },
+    {
+        "IDContent": 27,
+        "Content": "Khi chúng ta cố gắng để bản thân mình được trở nên tốt đẹp thì mọi thứ xung quanh bạn sẽ trở nên tươi đẹp cùng với bạn. Hãy cố gắng hoàn thiện bản thân mình mỗi ngày.",
+        "Author": "Nhà Giả Kim"
+    },
+    {
+        "IDContent": 28,
+        "Content": "Nếu bạn chinh phục được chính mình, bạn có thể chinh phục được cả thế giới.",
+        "Author": "Nhà Giả Kim"
+    },
+    {
+        "IDContent": 29,
+        "Content": "Chỉ khi bạn có một khao khát, một ước mơ mãnh liệt cũng như cố gắng hết sức để đạt được ước mơ đó, thì vũ trụ sẽ đáp lại mong muốn sâu thẳm trong tâm hồn bạn.",
+        "Author": "Nhà Giả Kim"
+    },
+    {
+        "IDContent": 30,
+        "Content": "Nếu ai đó không trở thành người mà mình mong đợi, người đời sẽ giận dữ. Dường như ai cũng nhìn con đường của người khác, nhưng chẳng nhận ra con đường của mình.",
+        "Author": "Nhà Giả Kim"
+    },
+    {
+        "IDContent": 31,
+        "Content": "Lãng quên đồng nghĩa với việc bạn đã quên đi một lần tổn thương, quên đi lý do vì sao bạn lại hứng chịu tổn thương đó, và đến một ngày nào đó sẽ có một ai khác sẽ lần nữa thương tổn bạn. Chính vì vậy thay vì lãng quên hãy tha thứ. Tha thứ để được thanh thản hơn, sống tốt hơn và hạnh phúc hơn.",
+        "Author": "Nhà Giả Kim"
+    },
+    {
+        "IDContent": 32,
+        "Content": "Những thứ vào miệng con người không độc hại xấu xa. Xấu xa, đọc hại là những thứ từ miệng họ tuôn ra.",
+        "Author": "Nhà Giả Kim"
+    },
+    {
+        "IDContent": 33,
+        "Content": "Nỗi sợ đau khổ cũng giống như việc bạn cầm ô đợi trời mưa vậy, đừng quá bận tâm về nỗi đau chưa xảy ra, thay vào đó hãy nỗ lực phấn đấu trên con đường tìm kiếm sự thành công.",
+        "Author": "Nhà Giả Kim"
+    },
+    {
+        "IDContent": 34,
+        "Content": "Không bao giờ bạn có thể trốn thoát khỏi trái tim mình. Vì vậy, tốt hơn hết là hãy lắng nghe những gì nó nói.",
+        "Author": "Nhà Giả Kim"
+    },
+    {
+        "IDContent": 35,
+        "Content": "Kỷ luật bản thân là một trong những yếu tố quan trọng nhất giúp bạn có thể làm chủ được cảm xúc từ đó làm chủ hành động, không để những sai lầm nối tiếp sai lầm.",
+        "Author": "Nhà Giả Kim"
+    },
+    {
+        "IDContent": 36,
+        "Content": "Đừng mong muốn có một cuộc sống dễ dàng, hãy mong muốn có đủ sức mạnh để sau mỗi lần vấp ngã, bạn có thể đứng dậy vươn vai và tiếp tục cố gắng, tiến về phía trước. Muốn thấy cầu vồng phải biết chịu đựng những cơn mưa, chẳng có thành công nào trải đầy những hoa hồng cho bạn cả. Hãy cố gắng hết mình bạn sẽ gặt hái được nhiều thành công.",
+        "Author": "Nhà Giả Kim"
+    },
+    {
+        "IDContent": 37,
+        "Content": "Cuộc sống không có nghĩa vụ phải trao cho chúng ta những gì ta kì vọng. Chúng ta mất những gì chúng ta có và tôi biết ơn vì nó đã không tồi tệ hơn thế.",
+        "Author": "Cuốn theo chiều gió"
+    },
+    {
+        "IDContent": 38,
+        "Content": "Mỗi người đau đớn theo một cách riêng, và đều có những vết sẹo của riêng mình.",
+        "Author": "Kafka Bên Bờ Biển"
+    },
+    {
+        "IDContent": 39,
+        "Content": "Cuộc sống này, đừng chọn cho mình cách sống quá khó khăn.",
+        "Author": "Bước chậm lại giữa thế gian vội vã"
+    },
+    {
+        "IDContent": 40,
+        "Content": "Phản kháng nhất thời chẳng có gì mạnh mẽ, người đối mặt với sự gặm nhấm từng chút một của hiện thực cuộc sống mà vẫn giữ được mình nguyên vẹn mới là dũng sĩ thật sự.",
+        "Author": "Rạp chiếu phim cuộc đời"
+    },
+    {
+        "IDContent": 41,
+        "Content": "Cuộc sống chính là những cuộc trao đổi, chẳng ai cho không ai cái gì, cũng chẳng có cái gì không có giá của nó. Bạn nhận của ai thì bạn phải trả lại cho người ta. Không có cái gì một chiều mà tồn tại lâu dài được cả : 'Có qua có lại mới toại lòng nhau.'",
+        "Author": "Đừng lãng phí những ngày đẹp trời"
+    },
+    {
+        "IDContent": 42,
+        "Content": "Không phải người ta ngừng theo đuổi giấc mơ vì mình già đi, người ta già đi vì ngừng theo đuổi giấc mơ.",
+        "Author": "Trăm năm cô đơn"
+    },
+    {
+        "IDContent": 43,
+        "Content": "Khi than vãn rằng mình không có một người cha giàu có, bạn phải biết rằng: Thời đại này không thể dựa vào cha vào mẹ, mà phải dựa vào thực lực của bản thân.",
+        "Author": "Đừng lựa chọn an nhàn khi còn trẻ"
+    },
+    {
+        "IDContent": 44,
+        "Content": "Cuộc sống của bạn sẽ trở nên tốt đẹp và hạnh phúc hơn nếu thấu hiểu được ẩn ý và cách sử dụng khéo léo và linh hoạt ngôn từ trong giao tiếp.",
+        "Author": "Sức mạnh của ngôn từ"
+    },
+    {
+        "IDContent": 45,
+        "Content": "Cuộc sống vốn có nhiều khó khăn thử thách và cả thất vọng, nỗi buồn. Dũng cảm vượt qua để luôn là chính mình và đừng để điều gì có thể che khuất ước mơ, niềm tin và hoài bão.",
+        "Author": "Hạt giống tâm hồn"
+    },
+    {
+        "IDContent": 46,
+        "Content": "Chẳng bao giờ có ai trải qua được nỗi đau của người khác, số phận dành cho mỗi người nỗi đau riêng.",
+        "Author": "Tiếng chim hót trong bụi mận gai"
+    },
+    {
+        "IDContent": 47,
+        "Content": "Làm chủ cảm xúc giúp hạn chế những lời nói mang tính khiêu khích, chọc giận, u uất. Chỉ khi đó mới có thể tự bảo vệ mình và không tổn thương người khác.",
+        "Author": "Sức mạnh của ngôn từ"
+    },
+    {
+        "IDContent": 48,
+        "Content": "Khó khăn sẽ tạo nên hoặc hủy hoại con người.",
+        "Author": "Cuốn theo chiều gió"
+    },
+    {
+        "IDContent": 49,
+        "Content": "Những mối quan hệ trong đời ta, dù chắc chắn sẽ kết thúc nhưng nó để lại cho ta những giá trị nhất định. Dù là trải nghiệm ngọt ngào hay bài học đắng chát thì nó cũng đều giúp ta trưởng thành hơn từng ngày.",
+        "Author": "Đừng sợ mình sai, đừng tin mình đúng"
+    },
+    {
+        "IDContent": 50,
+        "Content": "Mỗi người trong chúng ta đều đánh mất đi những thứ vô cùng quý giá. Mất đi cơ hội, mất đi khả năng, những cảm xúc mà không bao giờ ta kiếm tìm lại được. Đó chính là ý nghĩa tận cùng của sự sống.",
+        "Author": "Kafka Bên Bờ Biển"
+    },
+    {
+        "IDContent": 51,
+        "Content": "Cuộc đời chỉ như một chuyến tàu. Người này lên thì sẽ có người khác xuống. Khi bạn đã cố gắng hết sức, mà họ vẫn không cảm nhận được. Vậy thì hãy dừng lại… Nếu một ngày, họ thấy thiếu vắng bạn, họ sẽ biết bạn đã từng bên họ như thế nào. Nếu họ mãi không nhận ra sự chân thành trong bạn, hãy quay lưng và đi một hướng khác, hãy sống vì những gì xứng đáng hơn!",
+        "Author": "Tàu tốc hành"
+    },
+    {
+        "IDContent": 52,
+        "Content": "Cuộc sống là muôn vạn những chữ Ngờ, chúng ta không học được chữ Ngờ, càng không thể đoán biết trước được nó sẽ đến lúc nào. Nhưng chúng ta hoàn toàn có thể học cách đón nhận nó, một cách tích cực và thanh thản nhất có thể.",
+        "Author": "Sẽ có cách, đừng lo"
+    },
+    {
+        "IDContent": 53,
+        "Content": "Mình biết là mình hơi khác mọi người, nhưng mình vẫn là một con người. Mình muốn cậu nhận thức rõ điều đó. Mình là một con người bình thường, chứ không phải một quái vật. Mình cảm nhận sự vật như mọi người, hành động như mọi người. Tuy nhiên, đôi khi cái khác biệt nho nhỏ ấy lại như một vực thẳm ngăn cách.",
+        "Author": "Kafka Bên Bờ Biển"
+    },
+    {
+        "IDContent": 54,
+        "Content": "Chúng ta thường tự an ủi mình bằng câu nói quen thuộc “mọi thứ rồi sẽ ổn thôi” nhưng trong lòng mỗi người thực sự cũng không biết rằng tới khi nào mới là thời điểm “sẽ ổn” đó.",
+        "Author": "Sức mạnh của ngôn từ"
+    },
+    {
+        "IDContent": 55,
+        "Content": "Thuở 17, nàng mặc chiếc váy màu tro của hoa hồng, hi vọng về một mối tình điêu tàn khi chưa hoài thai.",
+        "Author": "Tiếng chim hót trong bụi mận gai"
+    },
+    {
+        "IDContent": 56,
+        "Content": "Không ai xứng đáng với những giọt nước mắt của bạn, nhưng nếu có người xứng đáng, anh ta sẽ không làm bạn khóc.",
+        "Author": "Trăm năm cô đơn"
+    },
+    {
+        "IDContent": 57,
+        "Content": "Đôi lúc, con người không phải là cố chấp không muốn tha thứ, mà là chờ hoài không có cơ hội để tha thứ.",
+        "Author": "Đừng sợ mình sai, đừng tin mình đúng"
+    },
+    {
+        "IDContent": 58,
+        "Content": "Bạn nghĩ lắng nghe là điều dễ dàng nhưng thực ra thì không. Lắng nghe cũng cần nỗ lực.",
+        "Author": "Sức mạnh của ngôn từ"
+    },
+    {
+        "IDContent": 59,
+        "Content": "Nếu lúc nào cũng thấy cuộc sống của người khác tốt hơn, đẹp hơn và cho rằng mình phải giống họ, bạn sẽ chẳng bao giờ lên được chuyến tàu của chính cuộc đời mình…",
+        "Author": "Tàu tốc hành"
+    },
+    {
+        "IDContent": 60,
+        "Content": "Không thể nhìn quá xa về phía trước. Nếu nhìn quá xa, anh sẽ bỏ hẳn cái trước mắt và sẽ vấp. Phải nhìn xa hơn một chút, kẻo sẽ đâm sầm vào một cái gì. Phải theo đúng trình tự đồng thời để mắt tới những gì ở phía trước.",
+        "Author": "Kafka Bên Bờ Biển"
+    },
+    {
+        "IDContent": 61,
+        "Content": "Cuộc đời này vẫn luôn tồn tại cả hai loại vấn đề, một loại giải quyết được bằng tiền, một loại không thể giải quyết bằng tiền. Nhưng nói thật, khi cuộc sống thoải mái về vật chất thì đã đỡ đến 60 - 70% các vấn đề trong đời rồi.",
+        "Author": "Đừng sợ mình sai, đừng tin mình đúng"
+    },
+    {
+        "IDContent": 62,
+        "Content": "Xưa nay chiến tranh nổ ra cũng chỉ vì miếng ăn. Mặc dù người ta luôn tìm cách che lấp đi bằng những điều cao cả.",
+        "Author": "Tôi Là Bêtô – Nguyễn Nhật Ánh"
+    },
+    {
+        "IDContent": 63,
+        "Content": "Sự đời là thế, cái gì bàn càng lắm thì càng nát, càng xa rời chân lí.",
+        "Author": "Số Đỏ – Vũ Trọng Phụng"
+    },
+    {
+        "IDContent": 64,
+        "Content": "Bà già bán khói cũng nói, sống là một thứ bổn phận trời dúi vào tay, cầm thì khổ mà không cầm áy náy…",
+        "Author": "Sông – Nguyễn Ngọc Tư"
+    },
+    {
+        "IDContent": 65,
+        "Content": "Người ta thường tiếc vì cuộc đời không có nút Delete. Nhưng ta luôn có thể nhấn nút Restart. Một cơ hội để ta khởi động lại. Một cơ hội để ta sửa chữa những hư hại của trái tim. Để ta quét vài con virus phiền nhiễu ra khỏi đầu óc. Để xóa bớt những mối quan hệ nặng nề mà vô dụng. Để dọn dẹp lại cuộc đời mình.",
+        "Author": "Nếu Biết Trăm Năm Là Hữu Hạn – Phạm Lữ Ân"
+    },
+    {
+        "IDContent": 66,
+        "Content": "Đường lúc bằng phẳng, lúc lên bậc thang, lúc xuống dốc đá. Như cuộc đời, không phải lúc nào cũng dễ đi, dễ sống. Nhưng dù sao thì, con đường đó do mỗi người chọn lựa, hãy đến những nơi mà chúng ta muốn, còn nếu điều bạn muốn là đi lối mòn, vậy thì cứ bước theo đám đông.",
+        "Author": "Đến Nhật Bản Học Về Cuộc Đời – Lê Nguyễn Nhật Linh"
+    },
+    {
+        "IDContent": 67,
+        "Content": "Để biết điều gì chờ ta sau cánh cửa, đầu tiên phải gõ cửa trước đã.",
+        "Author": "Cứ Gõ, Cửa Sẽ Mở – Báo Hoa Học Trò"
+    },
+    {
+        "IDContent": 68,
+        "Content": "Cả một đời nghe biết bao nhiêu đạo lý, nhưng vẫn không sống tốt cuộc sống này.",
+        "Author": "Có Những Ngày Cuộc Đời Chẳng Đoán Được – Ray Đoàn Huy"
+    },
+    {
+        "IDContent": 69,
+        "Content": "Trường lớp đủ sức vỗ về các giấc mộng, chứ cuộc đời không đủ lòng từ bi để hát mãi lời ru.",
+        "Author": "Đừng Tháo Xuống Nụ Cười – Khải Đơn"
+    },
+    {
+        "IDContent": 70,
+        "Content": "Nghịch lý thường nằm ở chỗ, chúng ta cứ thường phán xét cuộc sống của người khác dựa trên quan điểm cá nhân, rồi lại loay hoay tìm cách sống sao cho hợp với đánh giá theo quan điểm của người khác.",
+        "Author": "Lưng Chừng Cô Đơn – Nguyễn Ngọc Thạch"
+    },
+    {
+        "IDContent": 71,
+        "Content": "Tình yêu giống như một con chó. Khi ta đuổi thì nó chạy, khi ta chạy nó lại đuổi theo và khi ta đứng yên thì nó sủa.",
+        "Author": "Anh Yêu Em 1m45 Ạ! – Dương Hàn Linh"
+    },
+    {
+        "IDContent": 72,
+        "Content": "Sự sống nảy sinh từ trong cái chết, hạnh phúc hiện hình từ những hi sinh gian khổ, ở đời này không có con đường cùng, chỉ có những ranh giới, điều cốt yếu là phải có sức mạnh để bước qua những ranh giới ấy.",
+        "Author": "Mùa Lạc – Nguyễn Khải"
+    },
+    {
+        "IDContent": 73,
+        "Content": "Con đom đóm bay một đời như thế, có bao giờ phải hỏi người ta thích nó hay thích ánh đèn đâu? Cố tỏa sáng cuộc đời mình, rồi tự khắc có người đến an ủi em thôi…",
+        "Author": "Hiện Tại Kiên Trì Tương Lai Kiên Cố – aT"
+    },
+    {
+        "IDContent": 74,
+        "Content": "Bất cứ một lực tác động nào cũng đều có phản lực tương ứng. Tuy nhiên, có khi phản lực xảy ra ngay, có khi nó tiềm ẩn và xảy ra vào lúc khác, có thể trong kiếp này, có thể trong kiếp sau. Cũng vậy, nếu tôi gây đau khổ cho người khác, thì tôi cũng nhận lại đau khổ mà người khác gây cho tôi.",
+        "Author": "Muôn Kiếp Nhân Sinh – Nguyên Phong"
+    },
+    {
+        "IDContent": 75,
+        "Content": "Trong đời người ta sẽ bị ném đá một vài lần, đau lắm lắm nhưng chết vì mấy cục đá đó thì lãng quá…",
+        "Author": "Khói Trời Lộng Lẫy – Nguyễn Ngọc Tư"
+    },
+    {
+        "IDContent": 76,
+        "Content": "Đời người là một hợp đồng trọn gói. Niềm vui, nỗi buồn, hạnh phúc, khổ đau… Tất cả chỉ bán chung một gói, không thể mua riêng từng thứ được.",
+        "Author": "Trưởng Thành Sau Ngàn Lần Tranh Đấu – Rando Kim"
+    },
+    {
+        "IDContent": 77,
+        "Content": "Câu trả lời mơ hồ và ngu muội nhất trên thế gian này chính là câu “Cái gì cũng được”.",
+        "Author": "Bước Chậm Lại Giữa Thế Gian Vội Vã – Đại đức Hae Min"
+    },
+    {
+        "IDContent": 78,
+        "Content": "Đôi khi bạn chỉ cần làm những thứ tốt nhất cho bản thân và cuộc sống của mình. Chứ không phải là những điều tốt nhất cho những người khác.",
+        "Author": "Chú Chim Bay Không Quay Đầu Ngoảnh Lại – Ryu Shiva"
+    },
+    {
+        "IDContent": 79,
+        "Content": "Hãy sống như một trái dứa. Đầu đội vương miện, dáng đứng hiên ngang. Bên ngoài gai góc, bên trong ngọt ngào.",
+        "Author": "Khí Chất Bao Nhiêu, Hạnh Phúc Bấy Nhiêu – Vãn Tình"
+    },
+    {
+        "IDContent": 80,
+        "Content": "Cuộc sống không có đường tắt, mọi lựa chọn thoạt nhìn giống như đường tắt hầu hết đều là cạm bẫy. Nếu bạn không nỗ lực hết mình, cuộc sống sẽ đòi lại từ bạn gấp bội…",
+        "Author": "Khí Chất Bao Nhiêu, Hạnh Phúc Bấy Nhiêu – Vãn Tình"
+    },
+    {
+        "IDContent": 81,
+        "Content": "Đừng đuổi theo một con ngựa, hãy dùng thời gian đuổi theo nó để trồng cỏ, đợi tới mùa xuân, ắt sẽ có cả đàn ngựa béo cho ta lựa chọn. Đừng cố làm thân với một người, hãy dùng thời gian ấy để trau dồi năng lực của mình, tới khi thời cơ chín muồi, ắt sẽ có vô số bạn bè đồng hành cùng ta. Bởi vậy, nâng cao năng lực bản thân luôn tuyệt vời hơn là dựa dẫm vào người khác: gieo hạt ngô đồng, ắt có Phượng hoàng tới thăm; nếu hoa nở rộ, ắt có ong bướm tìm đến.",
+        "Author": "Bạn Đắt Giá Bao Nhiêu? – Vãn Tình"
+    },
+    {
+        "IDContent": 82,
+        "Content": "Trong cuộc sống của những con người hiện đại, khóc phải để ở “chế độ rung”.",
+        "Author": "Đừng Để Tương Lai Chết Trước Tuổi 30 – Lã Bạch"
+    },
+    {
+        "IDContent": 83,
+        "Content": "Quả thực, trong xã hội hiện đại, con người đã trở thành một loài động vật hoàn toàn bị chi phối bởi kinh tế. Cho dù là ở một ngóc ngách nào đó, chỉ cần có lợi thì ắt sẽ có thể tìm được đủ các loại chuỗi cung ứng khác nhau, cũng giống như việc các liên cầu khuẩn muôn hình muôn vẻ luôn tồn tại trong cơ thể con người vậy.",
+        "Author": "Đừng Nói Chuyện Với Cô Ấy – Ngộ Cẩn"
+    },
+    {
+        "IDContent": 84,
+        "Content": "Cuộc sống như một vòng tròn vẽ bằng tay, không bao giờ có một vòng tròn hoàn hảo. Việc chúng ta có thể làm là chấp nhận cái vòng tròn không hoàn mĩ đó thôi.",
+        "Author": "Sống Như Tiểu Cường – Bukla"
+    },
+    {
+        "IDContent": 85,
+        "Content": "Chuyện tình cảm thì cũng giống như hai con người nắm kéo hai đầu của một sợi dây thun, người buông tay sau nhất định sẽ bị đau.",
+        "Author": "First Love – Cửu Dạ Hồi"
+    },
+    {
+        "IDContent": 86,
+        "Content": "Thứ chênh lệch ít nhất giữa người với người chính là chỉ số thông minh, còn chênh lệch lớn nhất là lòng kiên trì.",
+        "Author": "Dám Mơ Lớn, Đừng Hoài Phí Tuổi Trẻ – Lư Tư Hạo"
+    },
+    {
+        "IDContent": 87,
+        "Content": "Có thể thấy được năng lực của một người qua việc kiếm tiền, nhưng việc tiêu tiền mới thể hiện phẩm vị của người đó.",
+        "Author": "Tôi Thích Bản Thân Nỗ Lực Hơn – Chu Xung"
+    },
+    {
+        "IDContent": 88,
+        "Content": "Ý nghĩa của cuộc đời không phải là có một ván bài đẹp, mà là đánh thắng một ván bài đen.",
+        "Author": "Ốc Sên Chạy – Điệp Chi Linh"
+    },
+    {
+        "IDContent": 89,
+        "Content": "Muốn một đời không khổ nhọc, chúng ta phải chịu khổ nhọc một thời.",
+        "Author": "Đừng Lựa Chọn An Nhàn Khi Còn Trẻ – Cảnh Thiên"
+    },
+    {
+        "IDContent": 90,
+        "Content": "Tôi không thích người có cuộc đời quá tròn trịa. Cũng không thích những người có dung nhan quá đẹp không chút khiếm khuyết. Không thích những người có tính cách quá cứng nhắc không có gì có thể lay chuyển nổi. Cuộc đời của con người phải phong phú và có khiếm khuyết. Khiếm khuyết là cửa ra của linh hồn.",
+        "Author": "Hoa Bên Bờ – An Ni Bảo Bối"
+    },
+    {
+        "IDContent": 91,
+        "Content": "Cuộc sống cũng giống như kính vạn hoa vậy, bạn tưởng rằng mình chỉ xoay nhẹ một tí thôi nhưng thực ra bên trong nó đã biến hóa rất nhiều, biến thành cả một thế giới khác.",
+        "Author": "Cho Anh Nhìn Về Phía Em – Tân Di Ổ"
+    },
+    {
+        "IDContent": 92,
+        "Content": "Chờ đợi không đáng sợ, cái đáng sợ nhất là không biết phải chờ đến bao giờ.",
+        "Author": "Bên Nhau Trọn Đời – Cố Mạn"
+    },
+    {
+        "IDContent": 93,
+        "Content": "Nước mắt so với tiếng cười vẫn thường chân thật hơn, khiến cho người ta ghi khắc lâu hơn. Bạn có thể sẽ không nhớ ai đã từng cười với bạn, nhưng chắc chắn sẽ nhớ kỹ người đã khóc vì bạn.",
+        "Author": "Tình Như Khói Hoa – Song Diện An Khả"
+    },
+    {
+        "IDContent": 94,
+        "Content": "Muốn thoát khỏi bầy sói thì phải ác hơn cả sói, nếu không muốn chết thì cố mà mọc nanh.",
+        "Author": "Tây Xuất Ngọc Môn – Vĩ Ngư"
+    },
+    {
+        "IDContent": 95,
+        "Content": "Các cô gái đừng bao giờ đánh rơi vương miện, đừng vì chiều lòng người khác mà khiến bản thân chịu thiệt thòi, trên đời này chẳng có mấy người đáng để bạn phải cúi mình đâu. Khom lưng quá lâu chỉ khiến người ta quen dần với tư thế thấp kém và không quan trọng của bạn mà thôi.",
+        "Author": "999 Lá Thư Gửi Cho Chính Mình – Miêu Công Tử"
+    },
+    {
+        "IDContent": 96,
+        "Content": "Cảm giác cô đơn đó như thể một ngọn núi, mỗi người đứng trên một ngọn khác nhau. Chúng ta đều biết rõ ngọn núi của đối phương trông như thế nào, nhưng lại không nắm được hình dáng của ngọn núi mà mình đang đứng.",
+        "Author": "Hoa Hồng Đêm – Thái Trí Hằng"
+    },
+    {
+        "IDContent": 97,
+        "Content": "Cuộc sống như trà, lúc đầu tranh nhau nổi lên, buông thả tinh hoa, cuối cùng giống như những hạt cát, rơi hết xuống đáy ly, cả đời cần phải trải qua muôn vàn đặc sắc, tại sao vừa mới bắt đầu đã chìm xuống đáy ly được?",
+        "Author": "Quay Lại Mỉm Cười, Bắt Đầu JQ – Đông Bôn Tây Cố"
+    },
+    {
+        "IDContent": 98,
+        "Content": "Trên đời này có hai thứ nước có thể sát trùng được nỗi đau, đó là nước mắt và dòng sông thời gian…",
+        "Author": "Cô Đơn Vào Đời – Dịch Phấn Hàn"
+    },
+    {
+        "IDContent": 99,
+        "Content": "Con người ta chẳng ai muốn đau khổ, chẳng ai muốn sợ hãi, ai cũng muốn cảm thấy hạnh phúc… Vì vậy, khi ai đó sắp ngã, tuyệt đối không được hùa vào để đẩy họ ngã thêm.",
+        "Author": "Nắp Biển – Banana Yoshimoto"
+    },
+    {
+        "IDContent": 100,
+        "Content": "Lòng người là cánh chim đêm. Nó âm thầm chờ đợi điều gì, rồi khi thời cơ đến nó sẽ bay vút đi thẳng tắp về phía đó.",
+        "Author": "Tazaki Tsukuru Không Màu Và Những Năm Tháng Hành Hương – Haruki Murakami"
+    }
+]
