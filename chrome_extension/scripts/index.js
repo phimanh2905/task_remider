@@ -44,6 +44,7 @@ function showAllData() {
 }
 
 function getDataAMISCongViec() {
+  document.getElementById("table-data").style.minHeight="500px";
   chrome.tabs.query(
     { active: true, windowId: chrome.windows.WINDOW_ID_CURRENT },
     (tabs) => {
@@ -114,13 +115,7 @@ function getDataAMISCongViec() {
         });
         thead.innerHTML = textHeader;
 
-        const getDateNow = () => {
-          const now = new Date();
-          return `Thời gian lấy dữ liệu: ${now.getDate()}/${
-            now.getMonth() + 1
-          }/${now.getFullYear()} ${now.getHours()}:${now.getMinutes()}:${now.getSeconds()}`;
-        };
-        const timeNow = getDateNow();
+        const timeNow = `Thời gian lấy dữ liệu: ${getDateTimeNow()}`;
         document.querySelector("#timenow").textContent = timeNow;
         localStorage.setItem("timenow", timeNow);
       });
@@ -144,6 +139,21 @@ function getDataAMISCongViec() {
   );
 }
 
+function getDateTimeNow(){
+  let dateNow = Date.now();
+
+  let date_ob = new Date(dateNow);
+  let date = ("0" + date_ob.getDate()).slice(-2);
+  let month = ("0" + (date_ob.getMonth() + 1)).slice(-2);
+  let year = date_ob.getFullYear();
+
+  let hours = ("0" + date_ob.getHours()).slice(-2);
+  let minutes = ("0" + date_ob.getMinutes()).slice(-2);
+  let seconds = ("0" + date_ob.getSeconds()).slice(-2);
+
+  return date + "/" + month + "/" + year + " " + hours + ":" + minutes + ":" + seconds;
+}
+
 async function postJSON(url, data) {
   let result = null;
   try {
@@ -156,7 +166,7 @@ async function postJSON(url, data) {
     });
 
     result = await response.json();
-    console.log("Success:", result);
+    console.log("Success:", result.message);
   } catch (error) {
     console.error("Error:", error);
   }

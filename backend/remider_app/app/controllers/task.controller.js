@@ -1,68 +1,56 @@
-const fs = require('fs');
-const path = require('path');
+const commonFn = require("../common/commonFn.js");
+const emailService = require("../services/email.service.js");
 
-const nodemailer = require('nodemailer');
-const emailConfig = require("../config/email.config");
-const transporter = nodemailer.createTransport({
-  service: emailConfig.SERVICE,
-  auth: {
-    user: emailConfig.USER,
-    pass: emailConfig.PASSWORD
-  }
-});
-
-async function generateMailOptions(emailAddress, subjectEmail, contentEmail) {
-  return {
-    from: emailConfig.USER,
-    to: emailAddress,
-    subject: subjectEmail,
-    text: contentEmail
-  };
-}
-
-async function sendEmail(mailOptions) {
-  transporter.sendMail(mailOptions, (error, info) => {
-    if (error) {
-      console.log('Lỗi khi gửi email:', error);
-      return {
-        success: false,
-        message: "Gửi email không thành công",
-      }
-    } else {
-      console.log(`Email đã được gửi: To(${mailOptions.to})`, info.response);
-      return {
-        success: true,
-        message: "Gửi email thành công",
-      }
-    }
-  });
-}
-
-exports.sendMail = (req, res) => {
-  const filePath = `${path.dirname(fs.realpathSync('app/data/employees.json'))}/employees.json`;
+exports.sendMail = async (req, res) => {
   let response = { success: false, message: "" };
 
-  fs.readFileSync(filePath, 'utf8', async (error, data) => {
-    if (error) {
-      console.error('Lỗi khi đọc tệp JSON:', error);
-      response = { success: false, message: "Có lỗi xảy ra!" };
-      return;
-    }
+  let employeesJSON = commonFn.readFileWithPath('app/data/employees.json');
+  try {
+    let employees = JSON.parse(employeesJSON);
+    let employeesSendEmail = employees.filter(x => req.body.indexOf(x.FullName) == -1);
 
-    try {
-      let employees = JSON.parse(data);
-      let employeesSendEmail = employees.filter(x => req.body.indexOf(x.FullName) == -1);
+    for (let i = 0; i < employeesSendEmail.length; i++) {
+      // Lấy nội dung HTML cần gửi
+      let sloganMessageContent = await emailService.getSloganMessageContent();
 
-      for (let i = 0; i < employeesSendEmail.length; i++) {
-        let mailOptions = await generateMailOptions(employeesSendEmail[i].Email, "Nhắc tạo task", "Tạo task đi nhé :))");
-        response = await sendEmail(mailOptions);
-      }
+      let replacements = [
+        {
+          FieldName: 'FullName',
+          FieldValue: employeesSendEmail[i].FullName
+        },
+        {
+          FieldName: 'DateNow',
+          FieldValue: commonFn.getDateNow()
+        },
+        {
+          FieldName: 'SloganMessage',
+          FieldValue: sloganMessageContent.Content
+        },
+        {
+          FieldName: 'Author',
+          FieldValue: sloganMessageContent.Author ?? 'Khuất danh'
+        }
+      ]
+
+      // Lấy nội dung HTML cần gửi
+      let htmlContentEmail = await emailService.getEmailTemplateContent('email_reminder_task.html', replacements);
+
+      // Subject email
+      let subjectEmail = `[Lưu ý] Đề nghị thành viên ${employeesSendEmail[i].FullName} kiểm tra và cập nhật công việc ngày ${commonFn.getDateNow()}`;
+      
+      let mailOptions = await emailService.generateMailOptions(
+        employeesSendEmail[i].Email,
+        subjectEmail,
+        htmlContentEmail,
+        'html'
+      );
+      response = await emailService.sendEmail(mailOptions);
     }
-    catch (error) {
-      console.error('Có lỗi khi thực hiện gửi mail:', error);
-      response = { success: false, message: "Có lỗi xảy ra!" }
-    }
-  });
+  }
+  catch (error) {
+    console.error('Có lỗi khi thực hiện gửi mail:', error);
+    response = { success: false, message: "Có lỗi xảy ra!" }
+  }
   res.json(response);
 };
 
