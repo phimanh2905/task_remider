@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Report Calendar</title>
+</head>
+
+<body>
+  <h1 class="heading-page">Báo cáo các thành viên đã nhắc tạo TASK theo từng ngày</h1>
+  <div id="message-report">
+    <button onclick="showReportByMonth()" class="btn-close">Danh sách thành viên</button>
+  </div>
+  <div class="main-body">
+    <div class="custom-alert" id="customAlert">
+      <div class="alert-content"></div>
+      <button onclick="closeAlert()" class="btn-close">Đóng</button>
+    </div>
+    <div class="calendar">
+      <div class="calendar-header">
+        <button class="prev-month">&#8249;</button>
+        <h3 class="current-month">August 2023</h3>
+        <button class="next-month">&#8250;</button>
+      </div>
+      <div class="calendar-weekdays">
+        <div class="weekday">Thứ hai</div>
+        <div class="weekday">Thứ ba</div>
+        <div class="weekday">Thứ tư</div>
+        <div class="weekday">Thứ năm</div>
+        <div class="weekday">Thứ sáu</div>
+        <div class="weekday">Thứ bảy</div>
+        <div class="weekday">Chủ nhật</div>
+      </div>
+      <div class="calendar-days" id="calendar-days">
+        <!-- Days and events will be generated dynamically using JavaScript -->
+      </div>
+    </div>
+  </div>
+  <script src="javascript/alert.js"></script>
+  <script src="javascript/main.js"></script>
+</body>
+
+</html>

@@ -5,7 +5,7 @@ const cors = require("cors");
 const app = express();
 
 var corsOptions = {
-  origin: "http://localhost:8080",
+  origin: "*",
 };
 
 app.use(cors(corsOptions));
@@ -30,6 +30,7 @@ app.get("/", (req, res) => {
 });
 
 require("./app/routes/task.routes")(app);
+require("./app/routes/report.routes")(app);
 
 // set port, listen for requests
 const PORT = process.env.NODE_DOCKER_PORT || 8080;
