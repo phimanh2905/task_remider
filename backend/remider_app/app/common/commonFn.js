@@ -12,9 +12,11 @@ function getDateNow(){
 function readFileWithPath(filePath, typeContent){
   const fs = require('fs');
   const path = require('path');
-  const filePath = `${path.dirname(fs.realpathSync(filePath))}/employees.json`;
+  const filePathName = path.resolve(filePath);
+  return fs.readFileSync(filePathName, typeContent ?? 'utf8');
 }
 
 module.exports = {
-    getDateNow
+    getDateNow,
+    readFileWithPath
 }

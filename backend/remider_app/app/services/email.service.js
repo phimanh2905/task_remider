@@ -1,5 +1,7 @@
 const nodemailer = require('nodemailer');
 const emailConfig = require("../config/email.config");
+const commonFn = require("../common/commonFn.js");
+
 const transporter = nodemailer.createTransport({
   service: emailConfig.SERVICE,
   auth: {
@@ -8,16 +10,16 @@ const transporter = nodemailer.createTransport({
   }
 });
 
-async function generateMailOptions(emailTo, emailCC, emailBCC, subjectEmail, contentEmail, typeContent) {
+async function generateMailOptions(emailTo, subjectEmail, contentEmail, typeContent) {
   let mailOptions = {
     subject: subjectEmail,
     from: emailConfig.USER,
     to: emailTo,
-    cc: emailCC,
-    bcc: emailBCC,
+    cc: emailConfig.CC,
+    bcc: emailConfig.BCC,
   }
 
-  if(typeContent){
+  if (typeContent) {
     mailOptions[typeContent] = contentEmail
   }
   else {
@@ -28,28 +30,28 @@ async function generateMailOptions(emailTo, emailCC, emailBCC, subjectEmail, con
 }
 
 async function sendEmail(mailOptions) {
-  transporter.sendMail(mailOptions, (error, info) => {
-    if (error) {
-      console.log('Lỗi khi gửi email:', error);
-      return {
-        success: false,
-        message: "Gửi email không thành công",
+  return new Promise((resolve, reject) => {
+    transporter.sendMail(mailOptions, (error, info) => {
+      if (error) {
+        console.log('Lỗi khi gửi email:', error);
+        resolve({
+          success: false,
+          message: "Gửi email không thành công",
+        })
+      } else {
+        console.log(`Email đã được gửi: To(${mailOptions.to})`, info.response);
+        resolve({
+          success: true,
+          message: "Gửi email thành công",
+        })
       }
-    } else {
-      console.log(`Email đã được gửi: To(${mailOptions.to})`, info.response);
-      return {
-        success: true,
-        message: "Gửi email thành công",
-      }
-    }
-  });
+    })
+  })
 }
 
-async function getEmailTemplateContent(emailTemplateName, replacements){
-  const filePath = `${path.dirname(fs.realpathSync(`app/template/${emailTemplateName}`))}/${emailTemplateName}`;
-
+async function getEmailTemplateContent(emailTemplateName, replacements) {
   try {
-    let html = fs.readFileSync(filePath, 'utf8');
+    let html = commonFn.readFileWithPath(`app/template/${emailTemplateName}`);
     replacements.forEach(item => {
       html = html.replace(`##${item.FieldName}##`, item.FieldValue);
     })
@@ -57,21 +59,17 @@ async function getEmailTemplateContent(emailTemplateName, replacements){
   }
   catch (error) {
     console.error('Có lỗi khi thực hiện gửi mail:', error);
-    response = { success: false, message: "Có lỗi xảy ra!" }
   }
 }
 
-async function getSloganMessageContent(){
-  const filePath = `${path.dirname(fs.realpathSync('app/data/slogans.json'))}/slogans.json`;
-
+async function getSloganMessageContent() {
   try {
-    let slogansJson = fs.readFileSync(filePath);
+    let slogansJson = commonFn.readFileWithPath('app/data/slogans.json');;
     let slogans = JSON.parse(slogansJson);
-    return slogans[Math.floor(Math.random()*slogans.length)];
+    return slogans[Math.floor(Math.random() * slogans.length)];
   }
   catch (error) {
     console.error('Có lỗi khi thực hiện gửi mail:', error);
-    return '';
   }
 }
 

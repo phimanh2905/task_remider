@@ -1,20 +1,17 @@
 const commonFn = require("../common/commonFn.js");
-const path = require('path');
-const fs = require('fs');
+const emailService = require("../services/email.service.js");
 
 exports.sendMail = async (req, res) => {
-  console.log(path.dirname(fs.mkdir('app/data/employees.json')));
-  const filePath = `${path.dirname(fs.realpathSync('app/data/employees.json'))}/employees.json`;
   let response = { success: false, message: "" };
 
-  let employeesJSON = fs.readFileSync(filePath, 'utf8');
+  let employeesJSON = commonFn.readFileWithPath('app/data/employees.json');
   try {
-    let employees = JSON.parse(data);
+    let employees = JSON.parse(employeesJSON);
     let employeesSendEmail = employees.filter(x => req.body.indexOf(x.FullName) == -1);
 
     for (let i = 0; i < employeesSendEmail.length; i++) {
       // Lấy nội dung HTML cần gửi
-      let sloganMessageContent = await getSloganMessageContent();
+      let sloganMessageContent = await emailService.getSloganMessageContent();
 
       let replacements = [
         {
@@ -36,20 +33,18 @@ exports.sendMail = async (req, res) => {
       ]
 
       // Lấy nội dung HTML cần gửi
-      let htmlContentEmail = await getEmailTemplateContent('email_reminder_task.html', replacements);
+      let htmlContentEmail = await emailService.getEmailTemplateContent('email_reminder_task.html', replacements);
 
       // Subject email
       let subjectEmail = `[Lưu ý] Đề nghị thành viên ${employeesSendEmail[i].FullName} kiểm tra và cập nhật công việc ngày ${commonFn.getDateNow()}`;
       
-      let mailOptions = await generateMailOptions(
+      let mailOptions = await emailService.generateMailOptions(
         employeesSendEmail[i].Email,
-        emailConfig.CC,
-        emailConfig.BCC,
         subjectEmail,
         htmlContentEmail,
         'html'
       );
-      response = await sendEmail(mailOptions);
+      response = await emailService.sendEmail(mailOptions);
     }
   }
   catch (error) {
