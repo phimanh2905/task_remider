@@ -1,5 +1,6 @@
 const commonFn = require("../common/commonFn.js");
 const emailService = require("../services/email.service.js");
+const reportService = require("../services/report.service.js");
 
 exports.sendMail = async (req, res) => {
   let response = { success: false, message: "" };
@@ -8,6 +9,7 @@ exports.sendMail = async (req, res) => {
   try {
     let employees = JSON.parse(employeesJSON);
     let employeesSendEmail = employees.filter(x => req.body.indexOf(x.FullName) == -1);
+    reportService.saveReportSendEmailEmployee(employeesSendEmail);
 
     for (let i = 0; i < employeesSendEmail.length; i++) {
       // Lấy nội dung HTML cần gửi
