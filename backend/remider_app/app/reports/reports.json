@@ -1,1 +1,37 @@
-[{"FullName":"Phan Chính Quốc","CreatedDate":"08-23-2023","Email":"pcquoc@software.misa.com.vn"},{"FullName":"Phí Hồng Mạnh","CreatedDate":"08-23-2023","Email":"phmanh@software.misa.com.vn"},{"FullName":"Phùng Thị Sợi","CreatedDate":"08-23-2023","Email":"ptsoi@software.misa.com.vn"},{"FullName":"Vũ Mạnh Cường","CreatedDate":"08-23-2023","Email":"vmcuong@software.misa.com.vn"}]
+[
+  {
+    "FullName": "Phan Chính Quốc",
+    "CreatedDate": "08-23-2023",
+    "Email": "pcquoc@software.misa.com.vn"
+  },
+  {
+    "FullName": "Phí Hồng Mạnh",
+    "CreatedDate": "08-23-2023",
+    "Email": "phmanh@software.misa.com.vn"
+  },
+  {
+    "FullName": "Phùng Thị Sợi",
+    "CreatedDate": "08-23-2023",
+    "Email": "ptsoi@software.misa.com.vn"
+  },
+  {
+    "FullName": "Vũ Mạnh Cường",
+    "CreatedDate": "08-23-2023",
+    "Email": "vmcuong@software.misa.com.vn"
+  },
+  {
+    "FullName": "Hoàng Hải Đăng",
+    "CreatedDate": "08-24-2023",
+    "Email": "hhdang@software.misa.com.vn"
+  },
+  {
+    "FullName": "Phạm Thị Yến",
+    "CreatedDate": "08-24-2023",
+    "Email": "ptyen@software.misa.com.vn"
+  },
+  {
+    "FullName": "Phí Hồng Mạnh",
+    "CreatedDate": "08-24-2023",
+    "Email": "phmanh@software.misa.com.vn"
+  }
+]

@@ -20,7 +20,7 @@ function generateCalendar(year, month) {
     calendarDays.appendChild(dayElement);
   }
   readData(month + 1, year);
-  monthAndYear = `${month}-${year}`
+  monthAndYear = `${month + 1}-${year}`
 }
 
 const prevMonthButton = document.querySelector('.prev-month');
