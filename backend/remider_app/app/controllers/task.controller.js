@@ -8,8 +8,7 @@ exports.sendMail = async (req, res) => {
   let employeesJSON = commonFn.readFileWithPath('app/data/employees.json');
   try {
     let employees = JSON.parse(employeesJSON);
-    let employeesSendEmail = employees.filter(x => req.body.indexOf(x.FullName) == -1);
-    reportService.saveReportSendEmailEmployee(employeesSendEmail);
+    let employeesSendEmail = employees.filter(x => req.body.employees.indexOf(x.FullName) == -1);
 
     for (let i = 0; i < employeesSendEmail.length; i++) {
       // Lấy nội dung HTML cần gửi
@@ -22,7 +21,7 @@ exports.sendMail = async (req, res) => {
         },
         {
           FieldName: 'DateNow',
-          FieldValue: commonFn.getDateNow()
+          FieldValue: commonFn.getDateNow("ddMMYYYY","/")
         },
         {
           FieldName: 'SloganMessage',
@@ -38,7 +37,7 @@ exports.sendMail = async (req, res) => {
       let htmlContentEmail = await emailService.getEmailTemplateContent('email_reminder_task.html', replacements);
 
       // Subject email
-      let subjectEmail = `[Lưu ý] Đề nghị thành viên ${employeesSendEmail[i].FullName} kiểm tra và cập nhật công việc ngày ${commonFn.getDateNow()}`;
+      let subjectEmail = `[Lưu ý] Đề nghị thành viên ${employeesSendEmail[i].FullName} kiểm tra và cập nhật công việc ngày ${commonFn.getDateNow("ddMMYYYY","/")}`;
       
       let mailOptions = await emailService.generateMailOptions(
         employeesSendEmail[i].Email,
@@ -48,6 +47,8 @@ exports.sendMail = async (req, res) => {
       );
       response = await emailService.sendEmail(mailOptions);
     }
+
+    reportService.saveReportSendEmailEmployee(employeesSendEmail);
   }
   catch (error) {
     console.error('Có lỗi khi thực hiện gửi mail:', error);

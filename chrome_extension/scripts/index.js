@@ -9,10 +9,26 @@ buttonSendMail.addEventListener("click", async () => {
   const rowHeader = localStorage.getItem("rowHeader");
   const rowBody = JSON.parse(localStorage.getItem("rowBody"));
 
-  const { message } = await this.postJSON(
-    "http://localhost:8080/api/tasks/sendmail",
-    rowBody.map(item=>item[7])
+  let fullNameGroup = groupData(rowBody, "7");
+  let bodyRequest = [];
+  for (const [key, value] of fullNameGroup.entries()) {
+    if(value.length > 1){
+      bodyRequest.push(key);
+    }
+    else {
+      if(!value[0][2].includes("Công việc", "Công việc ngày")){
+        bodyRequest.push(key);
+      }
+    }
+  }
+
+  const message = await postJSON(
+    "http://localhost:8081/api/tasks/sendmail",
+    {
+      employees: bodyRequest
+    }
   );
+
   // const { message } = await this.postJSON(
   //   "http://localhost:8080/api/tasks/sendmail",
   //   {
@@ -23,6 +39,18 @@ buttonSendMail.addEventListener("click", async () => {
   // );
   document.querySelector("#responseSendMail").innerHTML = message;
 });
+
+
+function groupData(data, property) {
+  const groupedData = new Map();
+  data.forEach(item => {
+    if (!groupedData.has(item[property])) {
+      groupedData.set(item[property], []);
+    }
+    groupedData.get(item[property]).push(item);
+  });
+  return groupedData;
+}
 
 function showAllData() {
   chrome.tabs.query(
@@ -44,7 +72,7 @@ function showAllData() {
 }
 
 function getDataAMISCongViec() {
-  document.getElementById("table-data").style.minHeight="500px";
+  document.getElementById("table-data").style.minHeight = "500px";
   chrome.tabs.query(
     { active: true, windowId: chrome.windows.WINDOW_ID_CURRENT },
     (tabs) => {
@@ -108,8 +136,8 @@ function getDataAMISCongViec() {
         var thead = document.querySelector("#headerData");
         var textHeader = "";
         rowHeader.forEach((item) => {
-          if(item == 'Tên công việc') {
-            textHeader += '<th>Mã công việc cha</th>'
+          if (item == "Tên công việc") {
+            textHeader += "<th>Mã công việc cha</th>";
           }
           textHeader += `<th>${item}</th>`;
         });
@@ -139,7 +167,7 @@ function getDataAMISCongViec() {
   );
 }
 
-function getDateTimeNow(){
+function getDateTimeNow() {
   let dateNow = Date.now();
 
   let date_ob = new Date(dateNow);
@@ -151,7 +179,19 @@ function getDateTimeNow(){
   let minutes = ("0" + date_ob.getMinutes()).slice(-2);
   let seconds = ("0" + date_ob.getSeconds()).slice(-2);
 
-  return date + "/" + month + "/" + year + " " + hours + ":" + minutes + ":" + seconds;
+  return (
+    date +
+    "/" +
+    month +
+    "/" +
+    year +
+    " " +
+    hours +
+    ":" +
+    minutes +
+    ":" +
+    seconds
+  );
 }
 
 async function postJSON(url, data) {
@@ -166,9 +206,8 @@ async function postJSON(url, data) {
     });
 
     result = await response.json();
-    console.log("Success:", result.message);
   } catch (error) {
-    console.error("Error:", error);
+    console.log("Error:", error);
   }
-  return result;
+  return result?.message;
 }
